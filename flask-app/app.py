@@ -6,7 +6,7 @@ app = Flask(__name__)
 conn = ibm_db.connect(os.environ['dbcred'], "", "")
 print("About to print connection")
 print(conn)
-
+print("Successfully connected")
 
 @app.route("/")
 def main():
